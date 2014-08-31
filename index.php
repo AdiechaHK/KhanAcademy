@@ -16,7 +16,7 @@ if ($handle = opendir('./json')) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($entry = readdir($handle))) {
         if($entry != "." && $entry != "..") {
-            echo "<li><a href='#'>$entry\n</a></li>";
+            echo "<li><a href='http://localhost:9000/codegeeks.html#".$entry."'>".$entry."</a></li>";
         }
     }
     echo "</ul>";
